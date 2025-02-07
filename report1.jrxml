@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="249f26f1-116a-4b78-869a-4fd7f62af984">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from student]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stdName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stdMotherName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stdBlood" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stdPhone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stdCity" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="151" y="0" width="357" height="58" uuid="221000dc-0d93-4e8e-aeae-1e5b3cec788f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Student Registration Systerm Summery Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="e5ff0891-003f-4682-b3aa-267ce52f0f67"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="10" width="30" height="20" uuid="a85619d7-5371-4713-910a-cf77fe04fcb9"/>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="10" width="42" height="20" uuid="ce80f373-88be-4568-88cc-9378e7342899"/>
+				<text><![CDATA[blood]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="10" width="57" height="20" uuid="66d6e289-a343-43af-97ff-cbbe1d287bc6"/>
+				<text><![CDATA[mothername]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="10" width="59" height="20" uuid="ddc4849d-2f14-4d29-9d17-7abf860f28d7"/>
+				<text><![CDATA[stdPhone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="452" y="2" width="36" height="20" uuid="d7d04b9f-f57c-402c-8058-8f9ff5a92ad7"/>
+				<text><![CDATA[stdCity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="10" width="49" height="20" uuid="c30e2f63-8ceb-445d-a32b-a033bc595990"/>
+				<text><![CDATA[class]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="6" width="38" height="20" uuid="b733a753-65dd-4310-9e07-6466b69830bd"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="85" y="6" width="46" height="20" uuid="c6e7fb33-3eff-47dd-97d0-90ccfef980fb"/>
+				<textFieldExpression><![CDATA[$F{stdName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="6" width="26" height="20" uuid="4b4a5214-99b8-4e82-9b8f-3e83a7047888"/>
+				<textFieldExpression><![CDATA[$F{stdMotherName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="6" width="35" height="20" uuid="f9345a7a-01ba-4060-b8db-22e207c9bd0b"/>
+				<textFieldExpression><![CDATA[$F{stdBlood}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="6" width="22" height="20" uuid="3120abb0-5552-4302-9319-2c4aee1f787d"/>
+				<textFieldExpression><![CDATA[$F{stdPhone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="452" y="15" width="36" height="20" uuid="87d0b5ca-f3d1-4e73-83bc-63d4022e5fe4"/>
+				<textFieldExpression><![CDATA[$F{stdCity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="369" y="15" width="26" height="20" uuid="f8b2794f-6534-48f8-bc2d-e8c224345fa5"/>
+				<textFieldExpression><![CDATA[$F{class}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

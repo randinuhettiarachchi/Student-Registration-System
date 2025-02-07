@@ -1,0 +1,6 @@
+DataBase Details:
+Name:student
+
+Login Details:
+Email:savith@gmail.com
+Password:2002
